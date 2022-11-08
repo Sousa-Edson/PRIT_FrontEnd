@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adote fácil | Home</title>
+    <link
+      rel="icon"
+      type="imagem/png"
+      href="imagens/MicrosoftTeams-image.png"
+    />
+
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+  </head>
+
+  <body class="hold-transition layout-top-nav layout-navbar-fixed">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav
+        class="main-header navbar navbar-expand-md navbar-light navbar-white"
+      >
+        <div class="container">
+          <a href="cadastroUsu.html" class="navbar-brand">
+            <img
+              src="imagens/MicrosoftTeams-image.png"
+              alt="Logo"
+              class="brand-image img-circle elevation-3"
+              style="opacity: 0.8"
+            />
+            <span class="brand-text font-weight-light">Adote fácil</span>
+          </a>
+
+          <button
+            class="navbar-toggler order-1"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="home-catalogo.html" class="nav-link">Galeria</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  id="dropdownSubMenu1"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  >Saiba mais</a
+                >
+                <ul
+                  aria-labelledby="dropdownSubMenu1"
+                  class="dropdown-menu border-0 shadow"
+                >
+                  <li><a href="#adote-animalzinho" class="dropdown-item">Sobre adoção </a></li>
+                  <li>
+                    <a href="#estamos-aqui-para-ajudar" class="dropdown-item"
+                      >Sobre doação</a
+                    >
+                  </li>
+
+                  <li class="dropdown-divider"></li>
+
+                  <!-- Level two dropdown-->
+                  <li class="dropdown-submenu dropdown-hover">
+                    <a
+                      id="dropdownSubMenu2"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="dropdown-item dropdown-toggle"
+                      >Feiras e eventos</a
+                    >
+                    <ul
+                      aria-labelledby="dropdownSubMenu2"
+                      class="dropdown-menu border-0 shadow"
+                    >
+                      <!-- Level three dropdown-->
+                      <li>
+                        <a
+                          tabindex="-1"
+                          href="#feiras-eventos-regiao"
+                          class="dropdown-item"
+                          >08/2022</a
+                        >
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a
+                          id="dropdownSubMenu3"
+                          href="#"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          class="dropdown-item dropdown-toggle"
+                          >09/2022</a
+                        >
+                        <ul
+                          aria-labelledby="dropdownSubMenu3"
+                          class="dropdown-menu border-0 shadow"
+                        >
+                          <li>
+                            <a href="#" class="dropdown-item">12/09/2022</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-item">24/09/2022</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- End Level three -->
+
+                      <li><a href="#" class="dropdown-item">10/2022</a></li>
+                      <li><a href="#" class="dropdown-item">11/2022</a></li>
+                    </ul>
+                  </li>
+                  <!-- End Level two -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#quem-somos" class="nav-link">Sobre nós</a>
+              </li>
+            </ul>
+
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-0 ml-md-3">
+              <div class="input-group input-group-sm">
+                <input
+                  class="form-control form-control-navbar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right navbar links -->
+          <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+            <!-- Messages Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="fas fa-comments"></i>
+                <span class="badge badge-danger navbar-badge">3</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <a href="#" class="dropdown-item">
+                  <!-- Message Start -->
+                  <div class="media">
+                    <img
+                      src="dist/img/user1-128x128.jpg"
+                      alt="User Avatar"
+                      class="img-size-50 mr-3 img-circle"
+                    />
+                    <div class="media-body">
+                      <h3 class="dropdown-item-title">
+                        Brad Diesel
+                        <span class="float-right text-sm text-danger"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </h3>
+                      <p class="text-sm">Call me whenever you can...</p>
+                      <p class="text-sm text-muted">
+                        <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Message End -->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <!-- Message Start -->
+                  <div class="media">
+                    <img
+                      src="dist/img/user8-128x128.jpg"
+                      alt="User Avatar"
+                      class="img-size-50 img-circle mr-3"
+                    />
+                    <div class="media-body">
+                      <h3 class="dropdown-item-title">
+                        John Pierce
+                        <span class="float-right text-sm text-muted"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </h3>
+                      <p class="text-sm">I got your message bro</p>
+                      <p class="text-sm text-muted">
+                        <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Message End -->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <!-- Message Start -->
+                  <div class="media">
+                    <img
+                      src="dist/img/user3-128x128.jpg"
+                      alt="User Avatar"
+                      class="img-size-50 img-circle mr-3"
+                    />
+                    <div class="media-body">
+                      <h3 class="dropdown-item-title">
+                        Nora Silvester
+                        <span class="float-right text-sm text-warning"
+                          ><i class="fas fa-star"></i
+                        ></span>
+                      </h3>
+                      <p class="text-sm">The subject goes here</p>
+                      <p class="text-sm text-muted">
+                        <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Message End -->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer"
+                  >See All Messages</a
+                >
+              </div>
+            </li>
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fa-bell"></i>
+                <span class="badge badge-warning navbar-badge">15</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <span class="dropdown-header">15 Notifications</span>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="fas fa-envelope mr-2"></i> 4 new messages
+                  <span class="float-right text-muted text-sm">3 mins</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="fas fa-users mr-2"></i> 8 friend requests
+                  <span class="float-right text-muted text-sm">12 hours</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="fas fa-file mr-2"></i> 3 new reports
+                  <span class="float-right text-muted text-sm">2 days</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer"
+                  >See All Notifications</a
+                >
+              </div>
+            </li>
+            <!-- Notifications Dropdown Menu -->
+            <!-- grupo que insere o usuario -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fas fa-solid fa-users"></i>
+                <span class="badge badge-success navbar-badge">1</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                <a href="temp-login.html" class="dropdown-item"
+                  ><i class="far fas fa-solid fa-users"></i> <span>Login</span>
+                </a>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+                        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                            <i class="fas fa-th-large"></i>
+                        </a>
+                    </li> -->
+          </ul>
+        </div>
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container">
+            <div class="row mb-2">
+              <div class="col-sm-12">
+                <div class="card card-outline">
+                  <div class="card-body text-center bg-warning">
+                    <!-- <div class="text-center"> -->
+                    <img
+                      class="img-fluid"
+                      src="imagens/MicrosoftTeams-image.png "
+                      alt=""
+                    />
+
+                    <!-- <main> aqui verifivvcar para colocar logo</main> -->
+                  </div>
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0" id="simplificando-adocao">
+                  Simplificando <small>sua adoção</small>
+                </h1>
+              </div>
+              <!-- /.col -->
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right"></ol>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+          </div>
+          <!-- /.content-header -->
+
+          <!-- Main content -->
+          <div class="content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div
+                      id="carouselExampleIndicators"
+                      class="carousel slide"
+                      data-ride="carousel"
+                    >
+                      <ol class="carousel-indicators">
+                        <li
+                          data-target="#carouselExampleIndicators"
+                          data-slide-to="0"
+                          class="active"
+                        ></li>
+                        <li
+                          data-target="#carouselExampleIndicators"
+                          data-slide-to="1"
+                        ></li>
+                        <li
+                          data-target="#carouselExampleIndicators"
+                          data-slide-to="2"
+                        ></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            class="d-block w-100"
+                            style="min-width: 100%; height: 562px"
+                            ;
+                            src="imagens/beautiful-pet-portrait-of-dog.jpg"
+                            alt="First slide"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            class="d-block w-100"
+                            style="min-width: 100%; height: 562px"
+                            ;
+                            src="imagens/cute-little-dog-impersonating-a-business-person.jpg"
+                            alt="Second slide"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            class="d-block w-100"
+                            style="min-width: 100%; height: 562px"
+                            ;
+                            src="imagens/group-portrait-of-adorable-puppies.jpg"
+                            alt="Third slide"
+                          />
+                        </div>
+                      </div>
+                      <a
+                        class="carousel-control-prev"
+                        href="#carouselExampleIndicators"
+                        role="button"
+                        data-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a
+                        class="carousel-control-next"
+                        href="#carouselExampleIndicators"
+                        role="button"
+                        data-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="col-sm-6">
+                    <h1 class="m-0" id="estamos-aqui-para-ajudar">
+                      Estamos aqui <small>para lhe ajudar!</small>
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <div class="card">
+                      <!-- esta diuv vazia para ter um espaço acima -->
+                    </div>
+                    <div class="container marketing">
+                      <!-- Three columns of text below the carousel -->
+                      <div class="row">
+                        <div class="col-lg-4" style="text-align: center">
+                          <img
+                            class="rounded-circle"
+                            src="imagens/3700_6_10.jpg"
+                            alt="imagem para adotar"
+                            width="140"
+                            height="140"
+                          />
+                          <h2>Adotar</h2>
+                          <p>
+                            Adotar é amar de graça.Quem abandona não tem raça.
+                          </p>
+
+                          <p>
+                            <a class="btn btn-secondary" href="home-adotar.html" role="button"
+                              >Clique aqui e saiba mais</a
+                            >
+                          </p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4" style="text-align: center">
+                          <img
+                            class="rounded-circle"
+                            src="imagens/4800_10_09.jpg"
+                            alt="doação imagem"
+                            width="140"
+                            height="140"
+                          />
+                          <h2>Doar</h2>
+
+                          <p>
+                            Se você acredita que todo animal merece um lar , não
+                            abandone doe.
+                          </p>
+                          <p>
+                            <a class="btn btn-secondary" href="home-doar.html" role="button"
+                              >Clique aqui e saiba mais</a
+                            >
+                          </p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4" style="text-align: center">
+                          <img
+                            class="rounded-circle"
+                            src="imagens/333061-PAIWZ2-854.jpg"
+                            alt="Generic placeholder image"
+                            width="140"
+                            height="140"
+                          />
+                          <h2>Apoiar</h2>
+                          <p>
+                            Nos ajude a ajudar vidas.Nenhum animal merece ficar
+                            sem uma familia e nenhuma familia sem um animal.
+                          </p>
+
+                          <p>
+                            <a class="btn btn-secondary" href="#" role="button"
+                              >Clique aqui e saiba mais</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <!-- /.col-lg-4 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- START THE FEATURETTES -->
+                  <div class="col-sm-6">
+                    <h1 class="m-0" id="feiras-eventos-regiao">
+                      Feiras e eventos <small>de sua região!</small>
+                    </h1>
+                  </div>
+                  <div class="card">
+                    <!-- <hr class="featurette-divider" /> -->
+
+                    <div
+                      class="row featurette align-items-center"
+                      style="margin: 20px"
+                    >
+                      <div class="col-md-7">
+                        <h2 class="featurette-heading">
+                          <a
+                            href="https://portal.barueri.sp.gov.br/Noticia/22092022-final-de-semana-tem-feira-de-adocao-de-caes-nos-parques-da-cidade"
+                            target="_blank"
+                            class="eaturette-heading"
+                          >
+                            Final de semana tem Feira de Adoção de Cães
+                            <span class="text-muted"
+                              >nos parques da cidade.</span
+                            >
+                          </a>
+                        </h2>
+
+                        <p class="lead">
+                          A Feira de Adoção de Cães continua acontecendo aos
+                          finais de semana (sábados e domingos) de setembro no
+                          Parque Municipal Dom José (rua Ângela Mirela, 500 –
+                          Jardim Barueri).
+                        </p>
+                        <small class="text-muted"
+                          >Data de Publicação: 22/09/2022</small
+                        >
+                      </div>
+                      <div class="col-md-5">
+                        <img
+                          class="featurette-image img-fluid mx-auto"
+                          data-src="holder.js/400x400/auto"
+                          alt="400x400"
+                          style="width: 500px; height: 400px"
+                          src="https://servicos.barueri.sp.gov.br/cms/Upload/Noticia/22092022-final-de-semana-tem-feira-de-adocao-de-caes-nos-parques-da-cidade-0.jpg"
+                          data-holder-rendered="true"
+                        />
+                      </div>
+                    </div>
+
+                    <hr class="featurette-divider" />
+
+                    <div
+                      class="row featurette align-items-center"
+                      style="margin: 20px"
+                    >
+                      <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">
+                          <a
+                            href="http://servicos.barueri.sp.gov.br/agendamentocepad/SelAnimal.aspx"
+                            target="_blank"
+                            class="eaturette-heading"
+                          >
+                            Agendamento
+                            <span class="text-muted">Castração.</span>
+                          </a>
+                        </h2>
+                        <p class="lead">
+                          Agendamento para a campanha de castração de animais
+                          cadastrados no Registro Geral de Animais(RGA).
+                        </p>
+                        <small class="text-muted"
+                          >Data de Publicação: 22/09/2022</small
+                        >
+                      </div>
+                      <div class="col-md-5 order-md-1">
+                        <img
+                          class="featurette-image img-fluid mx-auto"
+                          data-src="holder.js/400x400/auto"
+                          alt="400x400"
+                          src="http://servicos.barueri.sp.gov.br/agendamentocepad/img/agendamento.jpg"
+                          data-holder-rendered="true"
+                          style="width: 500px; height: 400px"
+                        />
+                      </div>
+                    </div>
+
+                    <hr class="featurette-divider" />
+
+                    <div
+                      class="row featurette align-items-center"
+                      style="margin: 20px"
+                    >
+                      <div class="col-md-7">
+                        <h2 class="featurette-heading">
+                          <a
+                            href="https://portal.barueri.sp.gov.br/Noticia/09092022-resgate-animal-da-nova-chance-a-pets-abandonados"
+                            target="_blank"
+                            class="eaturette-heading"
+                          >
+                            Resgate Animal dá nova chance a pets
+                            <span class="text-muted">abandonados.</span>
+                          </a>
+                        </h2>
+                        <p class="lead">
+                          O trabalho desenvolvido pelos profissionais que atuam
+                          no Resgate Animal de Barueri significa uma segunda
+                          chance aos animais domésticos abandonados pelas ruas.
+                        </p>
+                        <small class="text-muted"
+                          >Data de Publicação: 09/09/2022</small
+                        >
+                      </div>
+                      <div class="col-md-5">
+                        <img
+                          class="featurette-image img-fluid mx-auto"
+                          data-src="holder.js/400x400/auto"
+                          alt="400x400"
+                          src="https://servicos.barueri.sp.gov.br/cms/Upload/Noticia/09092022-resgate-animal-da-nova-chance-a-pets-abandonados-0.jpg"
+                          data-holder-rendered="true"
+                          style="width: 500px; height: 400px"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- <hr class="featurette-divider" /> -->
+
+                    <!-- /END THE FEATURETTES -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h1 class="m-0" id="adote-animalzinho">
+                  Adote <small>um animalzinho!</small>
+                </h1>
+              </div>
+              <div class="row">
+                <!-- Left col -->
+                <section class="col-lg-4">
+                  <!-- <h1>lado direito</h1> -->
+                  <div class="card card-outline">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <img
+                          src="imagens/Revista_Guarda_Responsavel-1.png"
+                          alt=""
+                          style="max-width: 100%"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.card -->
+                </section>
+                <!-- /.Left col -->
+                <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                <section class="col-lg-4">
+                  <!-- <h1>lado esquerdo</h1> -->
+                  <div class="card card-outline">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <img
+                          src="imagens/Revista_Guarda_Responsavel-2.png"
+                          alt=""
+                          style="max-width: 100%"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.card -->
+                </section>
+                <!-- right col -->
+                <section class="col-lg-4">
+                  <!-- <h1>lado esquerdo</h1> -->
+                  <div class="card card-outline">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <img
+                          src="imagens/Revista_Guarda_Responsavel-3.png"
+                          alt=""
+                          style="max-width: 100%"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                  <!-- /.card -->
+                </section>
+                <!-- right col -->
+              </div>
+               <!-- START THE FEATURETTES -->
+               <div class="col-sm-6">
+                <h1 class="m-0" id="quem-somos">
+                  Sobre <small>nós</small>
+                </h1>
+              </div>
+              <div class="card bg-warning " >
+                
+                    <div class="col-sm-12 text-center" style="margin-top: 10px;">
+                    <h1 class="text-primary  font-weight-bold   " style="font-size: 50px;"> Adote <span class="text-muted">fácil</span></h1>
+                </div>
+                <!-- <hr class="featurette-divider" /> -->
+                <div
+                  class="row featurette align-items-center"
+                  style="margin: 20px"
+                >
+                  <div class="col-md-7 order-md-2">
+                    
+                    <h2 class="featurette-heading">
+                        <span class="text-muted">Quem somos.</span>
+                      
+                    </h2>
+                    <p class="lead text-primary">
+                      <b>
+                        Somos um sistema para gerenciar adoções de animais, de uma maneira facil e intuitiva.
+                      </b>
+                    </p>
+                     <h2 class="featurette-heading">
+                        <span class="text-muted">Missão.</span>
+                      
+                    </h2>
+                    <p class="lead text-primary">
+                      <b>
+                        Trazer transparencia e meios onde o usuario possa adotar com facilidade seu pet.
+                      </b>
+                      
+                    </p>
+                    <h2 class="featurette-heading">
+                    <span class="text-muted">Visão.</span>
+                  
+                </h2>
+                <p class="lead text-primary">
+                  <b>
+                    Ser um dos principais meios para adoção de pets no Brasil.
+                  </b>
+                </p>
+                     <h2 class="featurette-heading">
+                        <span class="text-muted">Valores.</span>
+                      
+                    </h2>
+                    <p class="lead text-primary" >
+                      <b>
+
+                        Trazer felicidade a muitos lares e a muitos animais, por meio de facilitar o seu par pet perfeito.
+                      </b>
+                    </p>
+                     
+                  </div>
+                  <div class="col-md-5 order-md-1">
+                    <img
+                      class="featurette-image img-fluid mx-auto"
+                      data-src="holder.js/400x400/auto"
+                      alt="400x400"
+                      src="imagens/MicrosoftTeams-image.png"
+                      data-holder-rendered="true"
+                      style="width: 500px; height: 400px"
+                    />
+                  </div>
+                </div>
+
+                
+                   
+
+                <!-- <hr class="featurette-divider" /> -->
+
+                <!-- /END THE FEATURETTES -->
+              </div>
+            </div>
+          </div>
+                <!-- /.card -->
+
+                
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.col-md-6 -->
+
+              <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!-- To the right -->
+        <div class="float-right d-none d-sm-inline text-primary">
+          Adote e transfome uma vida (a sua)!!!
+        </div>
+        <!-- Default to the left -->
+        <strong
+          >Copyright &copy; 2022-2023
+          <a href="#simplificando-adocao">Adote fácil</a>.</strong
+        >
+        Todos os direitos reservados.
+      </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <!-- <script src="dist/js/demo.js"></script> -->
+  </body>
+</html>

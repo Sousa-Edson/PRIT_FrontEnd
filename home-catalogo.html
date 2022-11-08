@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adote fácil | Home</title>
+  <link rel="icon" type="imagem/png" href="imagens/MicrosoftTeams-image.png" />
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+</head>
+
+<body class="hold-transition layout-top-nav layout-navbar-fixed">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+      <div class="container">
+        <a href="../../index3.html" class="navbar-brand">
+          <img src="imagens/MicrosoftTeams-image.png" alt="Logo" class="brand-image img-circle elevation-3"
+            style="opacity: 0.8" />
+          <span class="brand-text font-weight-light">Adote fácil</span>
+        </a>
+
+        <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+          <!-- Left navbar links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Galeria</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                class="nav-link dropdown-toggle">Saiba mais</a>
+              <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                <li><a href="#adote-animalzinho" class="dropdown-item">Sobre adoção </a></li>
+                <li>
+                  <a href="#estamos-aqui-para-ajudar" class="dropdown-item">Sobre doação</a>
+                </li>
+
+                <li class="dropdown-divider"></li>
+
+                <!-- Level two dropdown-->
+                <li class="dropdown-submenu dropdown-hover">
+                  <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" class="dropdown-item dropdown-toggle">Feiras e eventos</a>
+                  <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                    <!-- Level three dropdown-->
+                    <li>
+                      <a tabindex="-1" href="#feiras-eventos-regiao" class="dropdown-item">08/2022</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" class="dropdown-item dropdown-toggle">09/2022</a>
+                      <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a href="#" class="dropdown-item">12/09/2022</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">24/09/2022</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- End Level three -->
+
+                    <li><a href="#" class="dropdown-item">10/2022</a></li>
+                    <li><a href="#" class="dropdown-item">11/2022</a></li>
+                  </ul>
+                </li>
+                <!-- End Level two -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#quem-somos" class="nav-link">Sobre nós</a>
+            </li>
+          </ul>
+
+          <!-- SEARCH FORM -->
+          <form class="form-inline ml-0 ml-md-3">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right navbar links -->
+        <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+          <!-- Messages Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="fas fa-comments"></i>
+              <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Brad Diesel
+                      <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">Call me whenever you can...</p>
+                    <p class="text-sm text-muted">
+                      <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                    </p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      John Pierce
+                      <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">I got your message bro</p>
+                    <p class="text-sm text-muted">
+                      <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                    </p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Nora Silvester
+                      <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">The subject goes here</p>
+                    <p class="text-sm text-muted">
+                      <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                    </p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+            </div>
+          </li>
+          <!-- Notifications Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <span class="dropdown-header">15 Notifications</span>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-users mr-2"></i> 8 friend requests
+                <span class="float-right text-muted text-sm">12 hours</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 new reports
+                <span class="float-right text-muted text-sm">2 days</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+            </div>
+          </li>
+          <!-- Notifications Dropdown Menu -->
+          <!-- grupo que insere o usuario -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fas fa-solid fa-users"></i>
+              <span class="badge badge-success navbar-badge">1</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+              <a href="login.html" class="dropdown-item"><i class="far fas fa-solid fa-users"></i> <span>Login</span>
+              </a>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+                        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                            <i class="fas fa-th-large"></i>
+                        </a>
+                    </li> -->
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <div class="content">
+          <div class="container">
+
+            <div class="col-sm-6">
+              <h1 class="m-0" id="adote-animalzinho">
+                Galeria <small>de seu novo animalzinho!</small>
+              </h1>
+            </div>
+            <!-- <div class="album py-5 bg-light"> -->
+            <div class="container">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                      src="https://acaochego.org/img/cachorros/634/filhote6_carolzinha8.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h1>CLAUDINHO</h1>
+                      <p class="card-text">Amigavel e brincalão</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="temp-catalogo-descricao.html"  class="btn btn-sm btn-outline-secondary">Ver</a>
+                          <a href="temp-adotar.html"  class="btn btn-sm btn-outline-success">Adotar</a>
+                        </div>
+                        <small class="text-muted">Macho, 8 anos</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                      src="https://acaochego.org/img/cachorros/780/filhote_luna1_10.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h1>JANIS</h1>
+                      <p class="card-text">EX FILHOTE DA LUNA 1</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="temp-catalogo-descricao.html"  class="btn btn-sm btn-outline-secondary">Ver</a>
+                          <a href="temp-adotar.html"  class="btn btn-sm btn-outline-success">Adotar</a>
+                        </div>
+                        <small class="text-muted">Fêmea, 6 anos</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                      src="https://acaochego.org/img/cachorros/505/nemo1_8.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h1>NEMO I</h1>
+                      <p class="card-text">Amoroso, Brincalhão, Calmo, Receoso.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="temp-catalogo-descricao.html"  class="btn btn-sm btn-outline-secondary">Ver</a>
+                          <a href="temp-adotar.html"  class="btn btn-sm btn-outline-success">Adotar</a>
+                        </div>
+                        <small class="text-muted">Macho, 13 anos</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                      src="https://acaochego.org/img/cachorros/405/sultao1.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h1>SULTÃO II</h1>
+                      <p class="card-text">Alegre, Amoroso, Bravo, Brincalhão</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="temp-catalogo-descricao.html"  class="btn btn-sm btn-outline-secondary">Ver</a>
+                          <a href="temp-adotar.html"  class="btn btn-sm btn-outline-success">Adotar</a>
+                        </div>
+                        <small class="text-muted">Macho, 12 anos</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                      src="https://acaochego.org/img/cachorros/754/filhote_campo_limpo2_13.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h1>BARTOLOMEU</h1>
+                      <p class="card-text">EX FILHOTE CAMPO LIMPO 2 </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="temp-catalogo-descricao.html"  class="btn btn-sm btn-outline-secondary">Ver</a>
+                          <a href="temp-adotar.html"  class="btn btn-sm btn-outline-success">Adotar</a>
+                        </div>
+                        <small class="text-muted">Macho, 12 anos</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                      src="https://acaochego.org/img/cachorros/776/bia2.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h1>BIA II</h1>
+                      <p class="card-text">Sofreu maus tratos na rua</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="temp-catalogo-descricao.html"  class="btn btn-sm btn-outline-secondary">Ver</a>
+                          <a href="temp-adotar.html"  class="btn btn-sm btn-outline-success">Adotar</a>
+                        </div>
+                        <small class="text-muted">Fêmea, 4 anos</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                      src="https://acaochego.org/img/cachorros/968/filhote7_bela_1.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h1>TONY</h1>
+                      <p class="card-text">EX FILHOTE BELA 7 </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="temp-catalogo-descricao.html"  class="btn btn-sm btn-outline-secondary">Ver</a>
+                          <a href="temp-adotar.html"  class="btn btn-sm btn-outline-success">Adotar</a>
+                        </div>
+                        <small class="text-muted">Macho, 3 anos</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- START THE FEATURETTES -->
+
+
+          </div>
+        </div>
+        <!-- /.card -->
+
+
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.col-md-6 -->
+
+    <!-- /.col-md-6 -->
+  </div>
+  <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+  </div>
+  <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline text-primary">
+      Adote e transfome uma vida (a sua)!!!
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2022-2023
+      <a href="#simplificando-adocao">Adote fácil</a>.</strong>
+    Todos os direitos reservados.
+  </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- REQUIRED SCRIPTS -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <!-- <script src="dist/js/demo.js"></script> -->
+</body>
+
+</html>
